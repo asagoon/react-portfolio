@@ -7,6 +7,7 @@ import Navbar from './components/Navbar/Navbar';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import SocialLinks from './components/SocialLinks';
+import Footer from './components/footer'
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <SocialLinks />
-        <Contact />
+        {/* <Contact /> */}
+        <Footer />
       </div>
     </Router>
   );
