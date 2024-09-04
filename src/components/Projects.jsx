@@ -11,6 +11,7 @@ const Projects = () => {
         title: 'ExpenseTracker',
         src: ExpenseTracker,
         code: 'https://github.com/asagoon/expense-tracker-app.git',
+        demo: 'https://expense-tracker-app-six-silk.vercel.app/',
         description: 'Expense Tracking, easily track and categorize daily expenses, monitor spending habits, and identify areas where savings can be made. Designed to simplify the budgeting process with a simple MUI design, the app offers a variety of features to help you track spending, set financial goals, and save money.',
         tools: [
             'React.js',
@@ -24,6 +25,7 @@ const Projects = () => {
         title: 'Othello',
         src: Othello,
         code: 'https://github.com/asagoon/othello-javascript.git',
+        demo: 'https://othello-javascript.vercel.app/',
         description: 'A simple Othello game made with Javascript. Created with a user-friendly interface that is smooth and intuitive. For killing time!',
         tools: [
             'HTML',
@@ -37,6 +39,7 @@ const Projects = () => {
       title: 'WeatherForecast',
       src: WeatherForecast,
       code: 'https://github.com/asagoon/Weather-App-Portfolio.git',
+      demo: 'https://weather-app-portfolio-three.vercel.app/',
       description: 'Easy weather forecast application. Check the weather you need on a daily basis!',
       tools: [
             'HTML',
@@ -61,12 +64,13 @@ return (
                             </p>
                         </div>
                         </div> */}
-                        {portfolios.map(({ id, title, src, code, description, tools}) => (
+                        {portfolios.map(({ id, title, src, code, demo, description, tools}) => (
                             <div key={id} className='my-10 min-[769px]:my-20 flex flex-col  xl:flex-row max-w-fit'>
                             <div className='relative flex items-center justify-center h-auto w-fit shadow-xl shadow-gray-400  hover:bg-[#242018]/50 group'>
                             <img src={src} alt="" width={300} className='group-hover:opacity-30'/>
-                            <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
+                            <div className='hidden group-hover:block absolute top-[50%] left-[40%] translate-x-[-35%] translate-y-[-50%] space-x-4'>
                                 <a href={code} className='text-[#A29F85] bg-[#FCF9EB] rounded-md px-3 py-2'>Git Hub</a>
+                                <a href={demo} className='text-[#A29F85] bg-[#FCF9EB] rounded-md px-3 py-2'>Check</a>
                             </div>
                         </div>
                         <div className='flex flex-col max-w-lg mx-10'>
